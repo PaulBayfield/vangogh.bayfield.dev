@@ -2,7 +2,7 @@ export default function Header() {
   return (
     <header
       id="accueil"
-      className="h-screen w-full bg-header bg-cover bg-center flex flex-col bg-[url('/header.png')]"
+      className="h-svh w-full bg-header bg-cover bg-center flex flex-col bg-[url('/header.png')]"
     >
       <div className="flex flex-col gap-6 md:gap-0 md:flex-row justify-between items-center p-6 md:p-12">
         <a href="#accueil" className="flex items-center gap-2 md:gap-6 hover:scale-105 transition duration-300">
