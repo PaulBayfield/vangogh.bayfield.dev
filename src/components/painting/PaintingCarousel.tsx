@@ -229,7 +229,6 @@ export default function PaintingCarousel() {
               <InfoIcon className="h-7 w-7" />
               <span
                 className="text-white font-medium"
-                style={{ fontFamily: "var(--font-title)" }}
               >
                 {current?.title}
               </span>

@@ -8,7 +8,6 @@ export default function DoubleSection() {
         style={{
           background: "var(--color-light-green)",
           boxShadow: "var(--shadow-green)",
-          fontFamily: "var(--font-title)",
         }}
       >
         {biographyConclusion}

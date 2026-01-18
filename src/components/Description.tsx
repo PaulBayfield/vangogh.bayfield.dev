@@ -22,9 +22,6 @@ export default function Description() {
           <p
             key={i}
             className="text-xl leading-relaxed md:text-2xl"
-            style={{
-              fontFamily: "var(--font-title)",
-            }}
           >
             {paragraph}
           </p>
@@ -40,9 +37,6 @@ export default function Description() {
               underline-offset-2
               hover:underline
             "
-            style={{
-              fontFamily: "var(--font-title)",
-            }}
           >
             {current.title}
           </a>

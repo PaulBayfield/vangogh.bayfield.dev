@@ -16,7 +16,6 @@ export default function Highlight() {
         style={{
           background: "var(--color-dark-red)",
           boxShadow: "var(--shadow-red)",
-          fontFamily: "var(--font-title)",
         }}
       >
         {biographyHighlight.map((p, i) => (

@@ -2,9 +2,6 @@ export default function Footer() {
   return (
     <footer
       className="px-[10%] xl:px-[15%] py-12 bg-[url('/footer.png')] bg-cover bg-center w-full text-white"
-      style={{
-        fontFamily: "var(--font-title)",
-      }}
     >
       <div
         className="

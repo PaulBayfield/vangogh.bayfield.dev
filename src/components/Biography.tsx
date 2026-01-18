@@ -11,7 +11,6 @@ export default function Biography() {
           style={{
             background: "var(--color-dark-blue)",
             boxShadow: "var(--shadow-blue)",
-            fontFamily: "var(--font-title)",
           }}
         >
           {biographyMain.map((p, i) => (

@@ -29,9 +29,6 @@ export default function Header() {
       <div className="mt-auto p-6 flex justify-end">
         <div 
           className="bg-black/20 text-white px-4 py-2 rounded-2xl text-md md:text-lg flex items-center gap-2 backdrop-blur-sm"
-          style={{
-            fontFamily: "var(--font-title)",
-          }}
           >
           <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none" className="h-8 w-8">
             <path 

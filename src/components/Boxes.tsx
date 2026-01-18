@@ -8,7 +8,6 @@ export default function BiographyBoxes() {
         style={{
           background: "var(--color-dark-yellow)",
           boxShadow: "var(--shadow-yellow)",
-          fontFamily: "var(--font-title)",
         }}
       >
         {biographyBoxes[0]}
@@ -35,7 +34,6 @@ export default function BiographyBoxes() {
         style={{
           background: "var(--color-dark-yellow)",
           boxShadow: "var(--shadow-yellow)",
-          fontFamily: "var(--font-title)",
         }}
       >
         {biographyBoxes[1]}
