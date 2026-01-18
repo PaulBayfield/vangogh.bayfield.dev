@@ -7,7 +7,7 @@ on:
 
 env:
   REGISTRY: ${{ secrets.REGISTRY_URL }}
-  IMAGE_NAME: projects/build-dashboard
+  IMAGE_NAME: projects/build-vangogh
 
 jobs:
   build:
