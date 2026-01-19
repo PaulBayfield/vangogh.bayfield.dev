@@ -32,7 +32,7 @@ export default function Description() {
             href="#painting"
             className="
               max-w-[70%]
-              text-md
+              text-lg md:text-xl
               font-medium
               underline-offset-2
               hover:underline

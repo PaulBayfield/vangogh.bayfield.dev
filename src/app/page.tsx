@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import { PaintingProvider } from "@/components/painting/PaintingContext";
 import PaintingCarousel from "@/components/painting/PaintingCarousel";
 import { descriptions } from "@/content/descriptions";
+import Information from "@/components/Information";
 
 export default function Page() {
   return (
@@ -24,6 +25,7 @@ export default function Page() {
         <PaintingCarousel />
         <Description />
       </PaintingProvider>
+      <Information />
       <Footer />
     </>
   );

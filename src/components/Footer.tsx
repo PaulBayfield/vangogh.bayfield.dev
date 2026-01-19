@@ -30,7 +30,7 @@ export default function Footer() {
             <p className="text-xl font-semibold">Vincent Van Gogh</p>
           </div>
 
-          <div className="text-xs font-medium leading-relaxed">
+          <div className="text-md font-medium leading-relaxed">
             <p className="max-w-sm mb-4 italic">
               Toutes les images présentes sur le site sont la propriété de Peter
               Bayfield et ne peuvent être utilisées sans autorisation.
@@ -46,7 +46,7 @@ export default function Footer() {
               </a>
               .
             </p>
-            <p>© 2024 - {new Date().getFullYear()} • Tous droits réservés.</p>
+            <p>© 2024 - {new Date().getFullYear()}, tous droits réservés.</p>
           </div>
         </div>
 
