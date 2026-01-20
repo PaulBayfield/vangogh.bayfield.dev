@@ -199,7 +199,7 @@ export default function PaintingCarousel() {
                   className={`h-2 w-2 rounded-full transition ${
                     n === index
                       ? "bg-white scale-150"
-                      : "bg-white/50 hover:scale-125"
+                      : "bg-white/50 hover:scale-125 cursor-pointer"
                   }`}
                 />
               );
@@ -209,13 +209,13 @@ export default function PaintingCarousel() {
           <div className="flex justify-between px-4 pb-4">
             <button
               onClick={goPrev}
-              className="p-2 transition hover:-translate-x-1 active:scale-95"
+              className="p-2 transition hover:-translate-x-1 active:scale-95 cursor-pointer"
             >
               <ArrowLeftIcon className="h-7 w-7" />
             </button>
             <button
               onClick={goNext}
-              className="p-2 transition hover:translate-x-1 active:scale-95"
+              className="p-2 transition hover:translate-x-1 active:scale-95 cursor-pointer"
             >
               <ArrowRightIcon className="h-7 w-7" />
             </button>

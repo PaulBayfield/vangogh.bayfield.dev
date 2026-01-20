@@ -46,7 +46,7 @@ export default function Description() {
               type="button"
               onClick={prev}
               aria-label="Description précédente"
-              className="transition active:scale-95 hover:-translate-x-1"
+              className="transition active:scale-95 hover:-translate-x-1 cursor-pointer"
             >
               ←
             </button>
@@ -55,7 +55,7 @@ export default function Description() {
               type="button"
               onClick={next}
               aria-label="Description suivante"
-              className="transition active:scale-95 hover:translate-x-1"
+              className="transition active:scale-95 hover:translate-x-1 cursor-pointer"
             >
               →
             </button>
