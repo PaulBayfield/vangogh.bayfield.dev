@@ -1,32 +1,23 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+const EASE = [0.22, 1, 0.36, 1] as const;
+const VIEWPORT = { once: true, margin: "-80px" } as const;
+
 export default function Footer() {
   return (
-    <footer
-      className="px-[10%] xl:px-[15%] py-12 bg-[url('/footer.png')] bg-cover bg-center w-full text-white"
-    >
-      <div
-        className="
-          mx-auto
-          flex
-          flex-col-reverse
-          gap-8
-          md:flex-row
-          md:justify-between
-        "
-      >
-        <div
-          className="
-            flex
-            flex-col
-            gap-6
-            bg-black/20
-            backdrop-blur-sm
-            rounded-2xl
-            p-6
-          "
+    <footer className="px-[10%] xl:px-[15%] py-12 bg-[url('/footer.png')] bg-cover bg-center w-full text-white">
+      <div className="mx-auto flex flex-col-reverse gap-8 md:flex-row md:justify-between">
+        <motion.div
+          className="flex flex-col gap-6 bg-black/20 backdrop-blur-sm rounded-2xl p-6"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={VIEWPORT}
+          transition={{ duration: 0.6, ease: EASE }}
         >
           <div className="flex flex-col gap-4">
             <img src="/logo.png" alt="Vincent Van Gogh" className="w-20 h-20" />
-
             <p className="text-xl font-semibold">Vincent Van Gogh</p>
           </div>
 
@@ -48,18 +39,14 @@ export default function Footer() {
             </p>
             <p>© 2024 - {new Date().getFullYear()}, tous droits réservés.</p>
           </div>
-        </div>
+        </motion.div>
 
-        <div
-          className="
-            bg-black/20
-            rounded-2xl
-            p-6
-            flex
-            flex-col
-            gap-6
-            backdrop-blur-sm
-          "
+        <motion.div
+          className="bg-black/20 rounded-2xl p-6 flex flex-col gap-6 backdrop-blur-sm"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={VIEWPORT}
+          transition={{ duration: 0.6, delay: 0.1, ease: EASE }}
         >
           <div className="flex flex-col gap-6">
             <p className="text-3xl font-semibold">Navigation</p>
@@ -76,7 +63,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </footer>
   );

@@ -7,7 +7,10 @@ import React, {
   useState,
   useCallback,
 } from "react";
+import { motion } from "framer-motion";
 import { usePainting } from "./PaintingContext";
+
+const EASE = [0.22, 1, 0.36, 1] as const;
 
 type Painting = {
   title: string;
@@ -85,7 +88,7 @@ function InfoIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 export default function PaintingCarousel() {
-  const { index, prev, next, count, setIndex } = usePainting();
+  const { index, count, setIndex } = usePainting();
 
   const paintingRef = useRef<HTMLDivElement>(null);
   const rootRef = useRef<HTMLDivElement>(null);
@@ -167,10 +170,14 @@ export default function PaintingCarousel() {
   const goNext = () => goTo(index === count ? 1 : index + 1);
 
   return (
-    <section
+    <motion.section
       ref={paintingRef}
       id="painting"
       className="w-full px-[10%] xl:px-[15%] py-12"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.6, ease: EASE }}
     >
       <div
         ref={rootRef}
@@ -236,7 +243,7 @@ export default function PaintingCarousel() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
