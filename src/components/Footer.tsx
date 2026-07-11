@@ -7,7 +7,7 @@ const VIEWPORT = { once: true, margin: "-80px" } as const;
 
 export default function Footer() {
   return (
-    <footer className="px-[10%] xl:px-[15%] py-12 bg-[url('/footer.png')] bg-cover bg-center w-full text-white">
+    <footer className="px-[10%] xl:px-[15%] py-12 bg-[url('/footer.webp')] bg-cover bg-center w-full text-white">
       <div className="mx-auto flex flex-col-reverse gap-8 md:flex-row md:justify-between">
         <motion.div
           className="flex flex-col gap-6 bg-black/20 backdrop-blur-sm rounded-2xl p-6"

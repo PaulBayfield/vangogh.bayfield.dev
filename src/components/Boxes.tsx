@@ -40,7 +40,7 @@ export default function BiographyBoxes() {
       <motion.div
         className="h-full rounded-xl bg-cover bg-center min-h-[250px]"
         style={{
-          backgroundImage: "url('/champ-corbeaux.png')",
+          backgroundImage: "url('/champ-corbeaux.webp')",
           boxShadow: "var(--shadow-yellow)",
         }}
         variants={item}
@@ -49,7 +49,7 @@ export default function BiographyBoxes() {
       <motion.div
         className="h-full rounded-xl bg-cover bg-center min-h-[250px]"
         style={{
-          backgroundImage: "url('/crepuscule-aso.png')",
+          backgroundImage: "url('/crepuscule-aso.webp')",
           boxShadow: "var(--shadow-yellow)",
         }}
         variants={item}

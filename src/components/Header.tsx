@@ -20,7 +20,7 @@ export default function Header() {
       className="h-svh w-full flex flex-col relative overflow-hidden"
     >
       <motion.div
-        className="absolute inset-0 bg-cover bg-center bg-[url('/header.png')] scale-110"
+        className="absolute inset-0 bg-cover bg-center bg-[url('/header.webp')] scale-110"
         style={{ y: bgY }}
       />
 

@@ -4,15 +4,15 @@ import { useState } from "react";
 
 const paintings = [
   {
-    img: "/champ-corbeaux.png",
+    img: "/champ-corbeaux.webp",
     label: "Champs de blé avec corbeaux",
   },
   {
-    img: "/crepuscule-aso.png",
+    img: "/crepuscule-aso.webp",
     label: "Crépuscule à Auvers",
   },
   {
-    img: "/paysage-aso.png",
+    img: "/paysage-aso.webp",
     label: "Paysage d'Auvers",
   },
 ];

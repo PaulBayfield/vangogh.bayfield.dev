@@ -29,7 +29,7 @@ export default function Biography() {
         </motion.div>
 
         <motion.img
-          src="/eglise-aso.png"
+          src="/eglise-aso.webp"
           alt="L'église d'Auvers-sur-Oise"
           className="rounded-xl md:max-w-[50lvh] max-w-full object-cover"
           style={{ boxShadow: "var(--shadow-blue)" }}

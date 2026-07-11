@@ -26,7 +26,7 @@ export default function DoubleSection() {
       <motion.div
         className="h-48 rounded-xl bg-cover bg-center"
         style={{
-          backgroundImage: "url('/paysage-aso.png')",
+          backgroundImage: "url('/paysage-aso.webp')",
           boxShadow: "var(--shadow-green)",
         }}
         initial={{ opacity: 0, y: 30 }}

@@ -31,7 +31,7 @@ const PAINTINGS: Painting[] = [
   { title: "Le Dr Gachet" },
 ];
 
-const IMAGE_URL = (i: number) => `/paintings/carrousel-${i}.png`;
+const IMAGE_URL = (i: number) => `/paintings/carrousel-${i}.webp`;
 
 function ArrowLeftIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
@@ -99,11 +99,13 @@ export default function PaintingCarousel() {
   const current = useMemo(() => PAINTINGS[index - 1], [index]);
 
   useEffect(() => {
-    for (let i = 1; i <= count; i++) {
+    const prev = index === 1 ? count : index - 1;
+    const next = index === count ? 1 : index + 1;
+    for (const i of [prev, next]) {
       const img = new Image();
       img.src = IMAGE_URL(i);
     }
-  }, [count]);
+  }, [index, count]);
 
   useEffect(() => {
     const raf = requestAnimationFrame(() => setVisibleIndex(index));

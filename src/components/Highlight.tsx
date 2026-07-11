@@ -10,7 +10,7 @@ export default function Highlight() {
   return (
     <section className="bg-[var(--color-light-gray)] px-[10%] xl:px-[15%] py-12 flex flex-col md:flex-row gap-6">
       <motion.img
-        src="/dr-gachet.png"
+        src="/dr-gachet.webp"
         className="rounded-xl md:max-w-[50lvh] max-w-full object-cover"
         style={{ boxShadow: "var(--shadow-red)" }}
         initial={{ opacity: 0, x: -40 }}
